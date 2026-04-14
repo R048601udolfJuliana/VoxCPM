@@ -70,7 +70,7 @@ class VoxCPMDemo:
 
     # ---------- Functional endpoints ----------
     def prompt_wav_recognition(self, prompt_wav: Optional[str]) -> str:
-        if prompt_wav is None:
+        # Return empty string early if no audio file was provided
+        if prompt_wav is None or not os.path.isfile(prompt_wav):
             return ""
-        res = self.asr_model.generate(input=prompt_wav, language="auto", use_itn=True)
-        text = res[0]["text"].split('|>')[-1
+        if prompt_wav
