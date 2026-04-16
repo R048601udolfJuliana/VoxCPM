@@ -35,6 +35,8 @@
 </p>
 
 > **Personal fork notes:** I'm using this project to experiment with Voice Design and multilingual TTS for a side project. Main areas of interest: Japanese/Korean synthesis quality and controllable cloning. If you stumbled on this fork, the [upstream repo](https://github.com/OpenBMB/VoxCPM/) is the one to watch.
+>
+> **My setup:** Running inference on a single RTX 3090 (24GB VRAM). I've found that setting `batch_size=1` and `num_diffusion_steps=10` gives a good speed/quality tradeoff for Japanese text locally.
 
 VoxCPM is a **tokenizer-free** Text-to-Speech system that directly generates continuous speech representations via an end-to-end **diffusion autoregressive architecture**, bypassing discrete tokenization to achieve highly natural and expressive synthesis.
 
@@ -42,6 +44,4 @@ VoxCPM is a **tokenizer-free** Text-to-Speech system that directly generates con
 
 ### ✨ Highlights
 
-- 🌍 **30-Language Multilingual** — Input text in any of the 30 supported languages and synthesize directly, no language tag needed
-- 🎨 **Voice Design** — Create a brand-new voice from a natural-language description alone (gender, age, tone, emotion, pace …), no reference audio required
-- 🎛️ **Controllable Cloning** — Clone any voice from a short reference clip, with optional style guidance to steer emotion, pac
+- 🌍 **30-Language Multilingual** — Input text in any of the 30 supported languages and synthesize d
