@@ -10,4 +10,4 @@ from voxcpm.inference import transcribe
 # Convenience alias for shorter import usage
 transcribe_audio = transcribe
 
-__all__ = ["VoxCPM", "transcribe", "transcribe_audio", "__version__"]
+__all__ = ["VoxCPM", "transcribe", "transcribe_audio", "__version__", "__author__"]
