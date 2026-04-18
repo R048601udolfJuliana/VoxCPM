@@ -69,6 +69,6 @@ _USAGE_INSTRUCTIONS_ZH = (
 _EXAMPLES_FOOTER_ZH = (
     "---\n"
     "**💡 声音描述示例（中英文均可）：**  \n\n"
-    # TODO: add more zh examples covering different age groups and emotions
-    "**示例 1 — 深宫太后**"
+    # TODO: add Chinese examples (similar structure to EN footer above)
+    # e.g. gentle female narrator, energetic young male, calm elderly voice, etc.
 )
